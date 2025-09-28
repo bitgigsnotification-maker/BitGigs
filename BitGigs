@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BitGigs</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .filter-bar {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .filter-btn:hover {
+      background: #eef2ff;
+      transform: translateY(-2px);
+    }
+
+    .level-icon span {
+      font-weight: bold;
+      margin-right: 2px;
+    }
+
+    .level-icon .s { color: green; }
+    .level-icon .a { color: orange; }
+    .level-icon .e { color: #5e72e4; }
+  </style>
+</head>
+<body>
+  <h1>BitGigs MicroTask Website</h1>
+
+  <div class="filter-bar">
+    <button class="filter-btn" id="categoryBtn">
+      <i class="fa-solid fa-list"></i> Category
+    </button>
+
+    <button class="filter-btn" id="locationBtn">
+      <i class="fa-solid fa-location-dot"></i> Location
+    </button>
+
+    <button class="filter-btn" id="levelBtn">
+      <div class="level-icon">
+        <span class="s">S</span>
+        <span class="a">A</span>
+        <span class="e">E</span>
+      </div>
+      Level
+    </button>
+  </div>
+
+  <script>
+    // Example JS (future functionality ke liye)
+    document.getElementById("categoryBtn").addEventListener("click", () => {
+      alert("Category filter clicked!");
+    });
+    document.getElementById("locationBtn").addEventListener("click", () => {
+      alert("Location filter clicked!");
+    });
+    document.getElementById("levelBtn").addEventListener("click", () => {
+      alert("Level filter clicked!");
+    });
+  </script>
+</body>
+</html>
