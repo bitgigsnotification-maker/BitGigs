@@ -1,0 +1,73 @@
+/* Filter Bar */
+.filter-bar {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+/* Buttons */
+.filter-btn {
+    flex-grow: 1;
+    background: transparent;
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 12px 10px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.25s ease;
+}
+
+/* Icon styling (circle background) */
+.filter-btn i {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+/* Category (Green) */
+#categoryBtn i {
+    background: #d8f1e0;
+    color: #0a8f34;
+}
+
+/* Location (Blue) */
+#locationBtn i {
+    background: #dceeff;
+    color: #0057b8;
+}
+
+/* Level (Orange) */
+#levelBtn i {
+    background: #ffe6d6;
+    color: #d94b16;
+}
+
+/* Hover effect */
+.filter-btn:hover {
+    background: #007bff;
+    color: #fff;
+    border-color: #007bff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.filter-btn:hover i {
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+}
